@@ -105,3 +105,7 @@ footer {
     background-color: #1e1e1e;
     color: #f4f4f4;
 }
+.inline-profilovka {
+    display: inline-block;
+    vertical-align: middle;
+}
