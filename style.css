@@ -1,0 +1,107 @@
+/* Základní styly pro tělo stránky */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Výška okna prohlížeče */
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Základní barva pozadí */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hlavička stránky */
+header {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Navigační odkazy */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+/* Tlačítko pro přepínání tématu */
+#theme-toggle {
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    padding: 10px 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#theme-toggle:hover {
+    background-color: #0056b3;
+}
+
+/* Obsah stránky */
+main {
+    flex: 1;
+    padding: 20px 10%;
+}
+
+/* Patička stránky */
+footer {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px 10%;
+    text-align: right;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: auto; /* Footer bude umístěn na spodku stránky */
+}
+
+/* Tmavé téma */
+.dark-theme {
+    background-color: #121212; /* Barva pozadí v tmavém režimu */
+    color: #f4f4f4;
+}
+
+.dark-theme header {
+    background-color: #1e1e1e;
+}
+
+.dark-theme nav a {
+    color: #f4f4f4;
+}
+
+.dark-theme nav a:hover {
+    color: #BB86FC;
+}
+
+.dark-theme #theme-toggle {
+    background-color: #BB86FC;
+    color: #121212;
+}
+
+.dark-theme #theme-toggle:hover {
+    background-color: #9a67ea;
+}
+
+.dark-theme footer {
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+}
